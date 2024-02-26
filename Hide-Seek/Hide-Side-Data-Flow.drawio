@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net" modified="2024-02-26T07:46:11.341Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="V2tn3UI5vqi9TlO2Fl3e" version="23.1.6" type="github">
+  <diagram name="Page-1" id="5d7acffa-a066-3a61-03fe-96351882024d">
+    <mxGraphModel dx="1509" dy="799" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-17" value="&lt;div&gt;Game&lt;/div&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="96" width="1336" height="832" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-26" value="Homebase" style="swimlane;startSize=20;horizontal=1;containerType=tree;" vertex="1" parent="1">
+          <mxGeometry x="152" y="152" width="416" height="324" as="geometry">
+            <mxRectangle x="256" y="216" width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-30" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;GameState&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Difficulty: Int&lt;br&gt;+ MaxTime: Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Room Size: Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Name: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ HintsLeft: Int&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-26">
+          <mxGeometry x="24" y="40" width="180" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-31" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-30">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-34" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;DisplayGUI&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ GameIsActive: Bool&lt;br&gt;+ Leaderboard: Array&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ SettingsMenu: Bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-26">
+          <mxGeometry x="24" y="160" width="176" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-35" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-34">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-36" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;ConnectDevices&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ HiderConnected: Bool&lt;br&gt;+ SeekerConnected: Bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ HiderBattery: Float&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ SeekerBattery: Float&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ ReadyToStart: Bool&lt;br&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-26">
+          <mxGeometry x="216" y="40" width="180" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-37" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-36">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-48" value="Hider" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="608" y="152" width="392" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-53" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;HiderState&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Attribute1: Type&lt;br&gt;+ Attribute2: Type&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-48">
+          <mxGeometry x="12" y="40" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-54" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-53">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-51" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;BatteryManagement&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Attribute1: Type&lt;br&gt;+ Attribute2: Type&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-48">
+          <mxGeometry x="200" y="40" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-52" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-51">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-59" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;Connections&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Attribute1: Type&lt;br&gt;+ Attribute2: Type&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-48">
+          <mxGeometry x="12" y="176" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-60" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-59">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-61" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;GameState&lt;br&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Attribute1: Type&lt;br&gt;+ Attribute2: Type&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-48">
+          <mxGeometry x="200" y="176" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-62" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-61">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-50" value="Seeker" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="1048" y="152" width="392" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-57" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;SeekerState&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Attribute1: Type&lt;br&gt;+ Attribute2: Type&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-50">
+          <mxGeometry x="8" y="40" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-58" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-57">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-55" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;BatteryManagement&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Attribute1: Type&lt;br&gt;+ Attribute2: Type&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-50">
+          <mxGeometry x="200" y="40" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-56" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-55">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-63" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;Connections&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Attribute1: Type&lt;br&gt;+ Attribute2: Type&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-50">
+          <mxGeometry x="12" y="176" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-64" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-63">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-65" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;GameState&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ Attribute1: Type&lt;br&gt;+ Attribute2: Type&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-50">
+          <mxGeometry x="200" y="176" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HGVN-Ubg_9u5FsFKcl_x-66" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="HGVN-Ubg_9u5FsFKcl_x-65">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
