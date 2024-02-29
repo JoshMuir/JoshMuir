@@ -12,21 +12,23 @@ const unsigned int runningHours = 1;
 class Solenoid
 {
   private:
-    int hoursRun;
+    unsigned long timeAtStart;
+    int timeToRun;
     
   public:
     int identifier;
     string section;
     bool isRunning;
     
-    void setTimer(int time)
-    {
-      
+    void setTimer(int timeInMinutes)
+    { // use millis() to set start time, then in main code if the time dif in millis  goes over set time limit, do stuff. 
+      timeAtStart = millis();
+      timeToRun = timeInMinutes;
     }
     
-    int getHoursRun()
+    int getTimeRun()
     {
-      
+      return millis() - timeAtStart()
     }
     
 }
