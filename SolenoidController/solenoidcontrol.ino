@@ -13,8 +13,9 @@ class Solenoid
 {
   private:
     unsigned long timeAtStart;
-    int timeToRun;
-    
+    unsigned long timeToRunInMillis;
+    unsigned long timeLeftInMillis;
+    unsigned long timePassedInMillis;
   public:
     int identifier;
     string section;
@@ -23,12 +24,15 @@ class Solenoid
     void setTimer(int timeInMinutes)
     { // use millis() to set start time, then in main code if the time dif in millis  goes over set time limit, do stuff. 
       timeAtStart = millis();
-      timeToRun = timeInMinutes;
+      timeToRunInMillis = timeInMinutes * 60000UL; // 1 Minute = 60k ms
     }
     
     int getTimeRun()
-    {
-      return millis() - timeAtStart()
+    { // This function will return how long is left on the timer
+      unsigned long timeNow = millis();
+      timePassedInMillis = timeNow - timeAtStart;
+      timeLeftInMillis = timeToRunInMillis - timePassedInMillis;  
+      return timeLeftInMillis / 60000UL;
     }
     
 }
