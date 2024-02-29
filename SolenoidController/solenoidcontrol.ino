@@ -7,6 +7,36 @@ const unsigned long HOUR = 3600*SECOND;
 const unsigned int numOfDays = 3;
 const unsigned int runningHours = 1;
 
+
+
+class Solenoid
+{
+  private:
+    int hoursRun;
+    
+  public:
+    int identifier;
+    string section;
+    bool isRunning;
+    
+    void setTimer(int time)
+    {
+      
+    }
+    
+    int getHoursRun()
+    {
+      
+    }
+    
+}
+
+
+
+
+
+
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
