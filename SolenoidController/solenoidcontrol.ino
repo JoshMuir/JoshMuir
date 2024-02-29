@@ -32,3 +32,13 @@ void loop() {
     delay(24*HOUR);
   }
 }
+
+void turnOnSolenoid(int solenoid)
+{
+  
+}
+
+void turnOffSolenoid(int solenoid)
+{
+
+}
