@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-04T03:28:15.954Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="AqGVPQ_GvurPQcnCJd8e" version="23.1.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-03-04T03:29:12.139Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="dsN1kp6AX8rpx_MLAa4v" version="23.1.8" type="github" pages="2">
   <diagram name="Overview" id="5d7acffa-a066-3a61-03fe-96351882024d">
     <mxGraphModel dx="1434" dy="959" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" background="#696969" math="0" shadow="0">
       <root>
@@ -255,7 +255,7 @@
         <mxCell id="-LEB9-mu3zR5E-0l-Ues-27" value="Alert homebaseof critical battery" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="170" y="180" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-LEB9-mu3zR5E-0l-Ues-37" value="Wait for start signal" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="-LEB9-mu3zR5E-0l-Ues-37" value="Enter " style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="514" y="920" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
