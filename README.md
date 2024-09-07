@@ -1,8 +1,5 @@
 ### Hi there 👋
 
-- 🔭 I’m currently working on my final sem engineering projects.
-
-- 🌱 I’m currently learning C for embedded systems.
 
 <!--
 **JoshMuir/JoshMuir** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
